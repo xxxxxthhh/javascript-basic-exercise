@@ -1,3 +1,13 @@
+/*
+ * @Author: Kyle Xu
+ * @Date: 2020-09-09 16:30:44
+ * @LastEditors: Kyle Xu
+ * @LastEditTime: 2020-09-09 17:06:28
+ * @Blog: http://kylexu.cn
+ * @Github: https://github.com/xxxxxthhh
+ * @Mail: kyle_x@foxmail.com
+ * @Description:  // write sth about Code
+ */
 export default function formatNumber(number, option) {
   // This function will format the number to a fixed number string. The decimal part should 2.
   // That means the number 2 will be formatted as '2.00'. The `option` is an object which contains
@@ -7,6 +17,10 @@ export default function formatNumber(number, option) {
   //
   // * Please implement the function and pass all the tests in format_number_spec.js.
   // * Please do NOT modify the signature of the function.
-
-  throw new Error('Please delete this line and implement the function');
+  // console.log(option.currency);
+  if (option != undefined && option.currency == true) {
+    return '$ ' + number.toFixed(2)
+  } else {
+    return number.toFixed(2)
+  }
 }

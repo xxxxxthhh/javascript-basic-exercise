@@ -1,3 +1,13 @@
+/*
+ * @Author: Kyle Xu
+ * @Date: 2020-09-09 16:30:44
+ * @LastEditors: Kyle Xu
+ * @LastEditTime: 2020-09-09 17:06:37
+ * @Blog: http://kylexu.cn
+ * @Github: https://github.com/xxxxxthhh
+ * @Mail: kyle_x@foxmail.com
+ * @Description:  // write sth about Code
+ */
 import formatNumber from '../../../src/exercise_01/numberFormatter';
 
 // Please do NOT modifiy the code in this file.
