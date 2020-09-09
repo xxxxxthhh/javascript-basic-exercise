@@ -1,3 +1,13 @@
+/*
+ * @Author: Kyle Xu
+ * @Date: 2020-09-09 16:30:44
+ * @LastEditors: Kyle Xu
+ * @LastEditTime: 2020-09-09 18:31:24
+ * @Blog: http://kylexu.cn
+ * @Github: https://github.com/xxxxxthhh
+ * @Mail: kyle_x@foxmail.com
+ * @Description:  // write sth about Code
+ */
 import { range, sum } from '../../../src/exercise_03/rangeAndSum';
 
 // Please do NOT modifiy the code in this file.
