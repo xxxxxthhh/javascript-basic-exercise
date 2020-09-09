@@ -2,7 +2,7 @@
  * @Author: Kyle Xu
  * @Date: 2020-09-09 16:30:44
  * @LastEditors: Kyle Xu
- * @LastEditTime: 2020-09-09 23:46:19
+ * @LastEditTime: 2020-09-10 00:20:35
  * @Blog: http://kylexu.cn
  * @Github: https://github.com/xxxxxthhh
  * @Mail: kyle_x@foxmail.com
@@ -16,23 +16,21 @@ export default function flattenArray(array) {
   // * Please implement this function and pass all the tests in flatten_array_spec.js.
   // * Please do NOT modify the signature of the function.
 
-  let levelCount = 0;
-  let flatA = [];
+  const flatA = [];
 
   if (array == null || array === undefined) {throw 'Flatten undefined or null array';}
 
   if (array.length === 0) {
     return array;
   }
-  console.log(array);
-
-  // for (let i = 0; i < array.length; i++) {
-  //   if (typeof (array[i]) !== 'number') {
-  //     levelCount += 1;
-  //     if (levelCount > 2) {
-        
-  //     }
-  //   }
-    
-  // }
+  for (let i = 0; i < array.length; i++) {
+    if (typeof (array[i]) !== 'number') {
+      for (let index = 0; index < array[i].length; index++) {
+        flatA.push(array[i][index]);
+      }
+    } else {
+      flatA.push(array[i]);
+    }
+  }
+  return flatA;
 }
